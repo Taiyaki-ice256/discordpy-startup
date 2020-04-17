@@ -76,6 +76,10 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "は復活した！" in message.embeds[0].description:
+                                reply = "::atk 復活てんきゅう"
+                                print("hukkatu")
+                                await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "<@266912885643411459> 復活"
                                 print("mention")
@@ -176,6 +180,10 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "は復活した！" in message.embeds[0].description:
+                                reply = "::atk 復活てんきゅう"
+                                print("hukkatu")
+                                await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "<@266912885643411459> 復活"
                                 print("mention")
@@ -309,6 +317,10 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "は復活した！" in message.embeds[0].description:
+                                reply = "::atk 復活てんきゅう"
+                                print("hukkatu")
+                                await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "<@266912885643411459> 復活"
                                 print("mention")
@@ -439,6 +451,10 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "は復活した！" in message.embeds[0].description:
+                                reply = "::atk 復活てんきゅう"
+                                print("hukkatu")
+                                await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "<@266912885643411459> 復活"
                                 print("mention")
