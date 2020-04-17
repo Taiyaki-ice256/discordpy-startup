@@ -55,6 +55,7 @@ async def on_message(message):
         if message.content.startswith('i;i'):
             reply = "::i i <@" + str(message.author.id) + "> "
             print("inori")
+            sleep(0.8)
             await message.channel.send(reply)
 
 
@@ -107,6 +108,7 @@ async def on_message(message):
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
+                                sleep(1)
                                 reply = "::atk 復活てんきゅう"
                                 print("hukkatu")
                                 await message.channel.send(reply)
@@ -219,6 +221,7 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 reply = "::atk 復活てんきゅう"
                                 print("hukkatu")
+                                sleep(1)
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
@@ -362,6 +365,7 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 reply = "::atk 復活てんきゅう"
                                 print("hukkatu")
+                                sleep(1)
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
@@ -502,6 +506,7 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 reply = "::atk 復活てんきゅう"
                                 print("hukkatu")
+                                sleep(1)
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
