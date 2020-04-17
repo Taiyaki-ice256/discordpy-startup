@@ -43,7 +43,7 @@ fire = "false"
 async def on_message(message):
     if message.guild.id == 378472113394417674:
         if message.content.startswith('i;i'):
-            reply = "::i i <@" + message.author.id + "> "
+            reply = "::i i <@" + str(message.author.id) + "> "
             print("inori")
             await message.channel.send(reply)
 
