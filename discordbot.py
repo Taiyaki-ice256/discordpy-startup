@@ -43,6 +43,9 @@ async def on_message(message):
         if message.content.startswith('1;on'):
             if message.author.id == 266912885643411459:
                 auto1 = "on"
+        if message.content.startswith('1;off'):
+            if message.author.id == 266912885643411459:
+                auto1 = "off"
         if message.content.startswith('1;chs'):
             if message.author.id == 266912885643411459:
                 ch1 = message.channel.id
