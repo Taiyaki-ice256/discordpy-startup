@@ -46,6 +46,19 @@ async def on_message(message):
             reply = "::i i <@" + str(message.author.id) + "> "
             print("inori")
             await message.channel.send(reply)
+        if message.content.startswith('i;s'):
+            reply = message.content[3::]
+            str(reply)
+            print(reply)
+            reply.replace(' ', '')
+            print(reply)
+            await message.channel.send(reply)
+        if message.content.startswith('allsay'):
+            reply = message.content[6::]
+            str(reply)
+            reply.replace(' ', '')
+            print(reply)
+            await message.channel.send(reply)
 
 
 @bot_one.event
