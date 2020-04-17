@@ -9,11 +9,13 @@ import traceback
 loop = asyncio.get_event_loop()
 
 bot = commands.Bot(command_prefix='/')
+botitoken = os.environ['DISCORD_BOT_TOKEN_i']
 bot1token = os.environ['DISCORD_BOT_TOKEN1']
 bot2token = os.environ['DISCORD_BOT_TOKEN2']
 bot3token = os.environ['DISCORD_BOT_TOKEN3']
 bot4token = os.environ['DISCORD_BOT_TOKEN4']
 
+bot_i = commands.Bot(loop=loop, command_prefix="i;;")
 bot_one = commands.Bot(loop=loop, command_prefix="1;;")
 bot_two = commands.Bot(loop=loop, command_prefix="2;;")
 bot_three = commands.Bot(loop=loop, command_prefix="3;;")
@@ -36,6 +38,15 @@ two = "false"
 three = "false"
 four = "false"
 fire = "false"
+
+@bot_i.event
+async def on_message(message):
+    if message.guild.id == 378472113394417674:
+        if message.content.startswith('i;i'):
+            reply = "::i i <@" + message.author.id + "> "
+            print("inori")
+            await message.channel.send(reply)
+
 
 @bot_one.event
 async def on_message(message):
@@ -64,7 +75,7 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -72,13 +83,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -105,7 +116,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(2)
+                                    sleep(0.5)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -174,7 +185,7 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -182,13 +193,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -215,7 +226,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(2)
+                                    sleep(0.5)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -317,7 +328,7 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -325,13 +336,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -358,7 +369,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(2)
+                                    sleep(0.5)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -457,7 +468,7 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -465,13 +476,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(2)
+                            sleep(0.5)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -498,7 +509,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(2)
+                                    sleep(0.5)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -574,4 +585,5 @@ async def on_message(message):
 loop.create_task(bot_two.start(bot2token, bot=False))
 loop.create_task(bot_three.start(bot3token, bot=False))
 loop.create_task(bot_four.start(bot4token, bot=False))
+loop.create_task(bot_i.start(botitoken, bot=False))
 bot_one.run(bot1token, bot=False)
