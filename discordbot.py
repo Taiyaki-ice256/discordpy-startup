@@ -90,7 +90,7 @@ async def on_message(message):
                         if message.embeds[0].title:
                             print(message.embeds[0].title)
                             if "【超激レア】" in message.embeds[0].title:
-                                reply = "<@266912885643411459> "
+                                reply = "<@266912885643411459> 超激レア"
                                 print("mention")
                                 await message.channel.send(reply)
                             elif "Lv." + lv1 + " " in message.embeds[0].title:
@@ -194,7 +194,7 @@ async def on_message(message):
                         if message.embeds[0].title:
                             print(message.embeds[0].title)
                             if "【超激レア】" in message.embeds[0].title:
-                                reply = "<@266912885643411459> "
+                                reply = "<@266912885643411459> 超激レア"
                                 print("mention")
                                 await message.channel.send(reply)
                             elif "Lv." + lv2 + " " in message.embeds[0].title:
@@ -331,7 +331,7 @@ async def on_message(message):
                         if message.embeds[0].title:
                             print(message.embeds[0].title)
                             if "【超激レア】" in message.embeds[0].title:
-                                reply = "<@266912885643411459> "
+                                reply = "<@266912885643411459> 超激レア"
                                 print("mention")
                                 await message.channel.send(reply)
                             elif "Lv." + lv3 + " " in message.embeds[0].title:
@@ -465,7 +465,7 @@ async def on_message(message):
                         if message.embeds[0].title:
                             print(message.embeds[0].title)
                             if "【超激レア】" in message.embeds[0].title:
-                                reply = "<@266912885643411459> "
+                                reply = "<@266912885643411459> 超激レア"
                                 print("mention")
                                 await message.channel.send(reply)
                             elif "Lv." + lv4 + " " in message.embeds[0].title:
