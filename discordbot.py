@@ -44,6 +44,12 @@ async def on_message(message):
     global auto1
     global lv1
     if message.guild.id == 378472113394417674:
+        if message.content.startswith('all;on'):
+            if message.author.id == 266912885643411459:
+                auto1 = "on"
+        if message.content.startswith('all;off'):
+            if message.author.id == 266912885643411459:
+                auto1 = "off"
         if message.content.startswith('1;on'):
             if message.author.id == 266912885643411459:
                 auto1 = "on"
@@ -148,6 +154,12 @@ async def on_message(message):
     global auto2
     global lv2
     if message.guild.id == 378472113394417674:
+        if message.content.startswith('all;on'):
+            if message.author.id == 266912885643411459:
+                auto2 = "on"
+        if message.content.startswith('all;off'):
+            if message.author.id == 266912885643411459:
+                auto2 = "off"
         if message.content.startswith('2;on'):
             if message.author.id == 266912885643411459:
                 auto2 = "on"
@@ -285,6 +297,12 @@ async def on_message(message):
     global auto3
     global lv3
     if message.guild.id == 378472113394417674:
+        if message.content.startswith('all;on'):
+            if message.author.id == 266912885643411459:
+                auto3 = "on"
+        if message.content.startswith('all;off'):
+            if message.author.id == 266912885643411459:
+                auto3 = "off"
         if message.content.startswith('3;on'):
             if message.author.id == 266912885643411459:
                 auto3 = "on"
@@ -419,6 +437,12 @@ async def on_message(message):
     global auto4
     global lv4
     if message.guild.id == 378472113394417674:
+        if message.content.startswith('all;on'):
+            if message.author.id == 266912885643411459:
+                auto4 = "on"
+        if message.content.startswith('all;off'):
+            if message.author.id == 266912885643411459:
+                auto4 = "off"
         if message.content.startswith('4;on'):
             if message.author.id == 266912885643411459:
                 auto4 = "on"
