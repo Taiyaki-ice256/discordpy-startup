@@ -1,6 +1,7 @@
 import asyncio
 import discord
 from discord.ext import commands
+from time import sleep
 
 import os
 import traceback
@@ -164,6 +165,7 @@ async def on_message(message):
                     reply = '::atk '
                     if fire == "true":
                         reply = '::i f '
+                    sleep(0.8)
                     await message.channel.send(reply)
                     two = "false"
             if "！siriusは" in message.content:
@@ -172,6 +174,7 @@ async def on_message(message):
                     reply = '::atk '
                     if fire == "true":
                         reply = '::i f '
+                    sleep(0.8)
                     await message.channel.send(reply)
                     two = "false"
             if len(message.embeds) is 0:
@@ -184,6 +187,7 @@ async def on_message(message):
                         reply = '::atk '
                         if fire == "true":
                             reply = '::i f '
+                        sleep(0.8)
                         await message.channel.send(reply)
                         two = "false"
                     #print(message.embeds[0].description)
@@ -224,6 +228,7 @@ async def on_message(message):
                 reply = '::atk '
                 if fire == "true":
                     reply = '::i f '
+                sleep(0.8)
                 await message.channel.send(reply)
                 three = "false"
         if "！Ceresは" in message.content:
@@ -231,6 +236,7 @@ async def on_message(message):
                 reply = '::atk '
                 if fire == "true":
                     reply = '::i f '
+                sleep(0.8)
                 await message.channel.send(reply)
                 three = "false"
         #print(str(len(message.embeds)))
@@ -245,6 +251,7 @@ async def on_message(message):
                         reply = '::atk '
                         if fire == "true":
                             reply = '::i f '
+                        sleep(0.8)
                         await message.channel.send(reply)
                         three = "false"
 @bot_four.event
@@ -283,6 +290,7 @@ async def on_message(message):
                 reply = '::atk '
                 if fire == "true":
                     reply = '::i f '
+                sleep(0.8)
                 await message.channel.send(reply)
                 four = "false"
         if "！irisは" in message.content:
@@ -290,6 +298,7 @@ async def on_message(message):
                 reply = '::atk '
                 if fire == "true":
                     reply = '::i f '
+                sleep(0.8)
                 await message.channel.send(reply)
                 four = "false"
         #print(str(len(message.embeds)))
@@ -304,6 +313,7 @@ async def on_message(message):
                         reply = '::atk '
                         if fire == "true":
                             reply = '::i f '
+                        sleep(0.8)
                         await message.channel.send(reply)
                         four = "false"
 
