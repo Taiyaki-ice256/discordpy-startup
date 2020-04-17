@@ -101,7 +101,7 @@ async def on_message(message):
                                 print("hukkatu")
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
-                                reply = "<@266912885643411459> 復活"
+                                reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
                                 await message.channel.send(reply)
                         if message.embeds[0].title:
@@ -211,7 +211,7 @@ async def on_message(message):
                                 print("hukkatu")
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
-                                reply = "<@266912885643411459> 復活"
+                                reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
                                 await message.channel.send(reply)
                         if message.embeds[0].title:
@@ -354,7 +354,7 @@ async def on_message(message):
                                 print("hukkatu")
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
-                                reply = "<@266912885643411459> 復活"
+                                reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
                                 await message.channel.send(reply)
                         if message.embeds[0].title:
@@ -494,7 +494,7 @@ async def on_message(message):
                                 print("hukkatu")
                                 await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
-                                reply = "<@266912885643411459> 復活"
+                                reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
                                 await message.channel.send(reply)
                         if message.embeds[0].title:
