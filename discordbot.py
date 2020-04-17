@@ -18,6 +18,15 @@ bot_two = commands.Bot(loop=loop, command_prefix="2;;")
 bot_three = commands.Bot(loop=loop, command_prefix="3;;")
 bot_four = commands.Bot(loop=loop, command_prefix="4;;")
 
+ch1 = 700507967857885235
+ch2 = 700507983930720287
+ch3 = 700508005866668033
+ch4 = 700508021419147544
+auto1 = "off"
+
+
+lv1 = "10000000"
+
 
 two = "false"
 three = "false"
@@ -27,7 +36,66 @@ fire = "false"
 @bot_one.event
 async def on_message(message):
     global fire
+    global ch1
+    global auto1
+    global lv1
+    if message.guild.id == 378472113394417674:
+        if message.content.startswith('1;on'):
+            if message.author.id == 266912885643411459:
+                auto1 = "on"
+        if message.content.startswith('1;chs'):
+            if message.author.id == 266912885643411459:
+                ch1 = message.channel.id
+        if message.channel.id == ch1:
+            if auto1 == "on":
+                if message.author.id == 526620171658330112:
+                    if "]の攻撃！" in message.content:
+                        if "の攻撃！[" in message.content:
+                            sleep(2)
+                            reply = "::atk "
+                            print("attack")
+                            await message.channel.send(reply)
+                        else:
+                            print("petkill")
+                    elif "ダメージを受けた。" in message.content:
+                        async with message.channel.typing():
+                            sleep(2)
+                            reply = "::atk "
+                            print("attack")
+                            await message.channel.send(reply)
+                    elif "は華麗にかわした！" in message.content:
+                        async with message.channel.typing():
+                            sleep(2)
+                            reply = "::atk "
+                            print("attack")
+                            await message.channel.send(reply)
+                    elif message.embeds[0:]:
+                        if message.embeds[0].title:
+                            print(message.embeds[0].title)
+                            if "【超激レア】" in message.embeds[0].title:
+                                reply = "<@266912885643411459> "
+                                print("mention")
+                                await message.channel.send(reply)
+                            elif "Lv." + lv1 + " " in message.embeds[0].title:
+                                reply = "<@266912885643411459> しゅうりょう！"
+                                print("mention")
+                                await message.channel.send(reply)
+                            elif "が待ち構えている...！" in message.embeds[0].title:
+                                async with message.channel.typing():
+                                    sleep(2)
+                                    reply = "::atk "
+                                    print("attack")
+                                    await message.channel.send(reply)
     if message.author.id == 266912885643411459:
+        if message.content.startswith('1;ls'):
+            lv1 = message.content[5::]
+            print("Lv." + lv1)
+            reply = message.content[5::]
+            str(reply)
+            print(reply)
+            reply.replace(' ', '')
+            print(reply)
+            await message.channel.send(reply)
         if message.content.startswith('1;s'):
             reply = message.content[3::]
             str(reply)
