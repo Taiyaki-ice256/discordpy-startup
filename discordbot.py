@@ -86,10 +86,11 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(0.5)
-                            reply = "::atk "
-                            print("attack")
-                            await message.channel.send(reply)
+                            async with message.channel.typing():
+                                sleep(0.5)
+                                reply = "::atk "
+                                print("attack")
+                                await message.channel.send(reply)
                         else:
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
@@ -108,10 +109,11 @@ async def on_message(message):
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
-                                sleep(1)
-                                reply = "::atk 復活てんきゅう"
-                                print("hukkatu")
-                                await message.channel.send(reply)
+                                async with message.channel.typing():
+                                    sleep(1)
+                                    reply = "::atk 復活てんきゅう"
+                                    print("hukkatu")
+                                    await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
@@ -197,10 +199,11 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(0.5)
-                            reply = "::atk "
-                            print("attack")
-                            await message.channel.send(reply)
+                            async with message.channel.typing():
+                                sleep(0.5)
+                                reply = "::atk "
+                                print("attack")
+                                await message.channel.send(reply)
                         else:
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
@@ -219,10 +222,11 @@ async def on_message(message):
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
-                                reply = "::atk 復活てんきゅう"
-                                print("hukkatu")
-                                sleep(1)
-                                await message.channel.send(reply)
+                                async with message.channel.typing():
+                                    reply = "::atk 復活てんきゅう"
+                                    print("hukkatu")
+                                    sleep(1)
+                                    await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
@@ -341,10 +345,11 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(0.5)
-                            reply = "::atk "
-                            print("attack")
-                            await message.channel.send(reply)
+                            async with message.channel.typing():
+                                sleep(0.5)
+                                reply = "::atk "
+                                print("attack")
+                                await message.channel.send(reply)
                         else:
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
@@ -363,10 +368,11 @@ async def on_message(message):
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
-                                reply = "::atk 復活てんきゅう"
-                                print("hukkatu")
-                                sleep(1)
-                                await message.channel.send(reply)
+                                async with message.channel.typing():
+                                    reply = "::atk 復活てんきゅう"
+                                    print("hukkatu")
+                                    sleep(1)
+                                    await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
@@ -482,10 +488,11 @@ async def on_message(message):
                 if message.author.id == 526620171658330112:
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
-                            sleep(0.5)
-                            reply = "::atk "
-                            print("attack")
-                            await message.channel.send(reply)
+                            async with message.channel.typing():
+                                sleep(0.5)
+                                reply = "::atk "
+                                print("attack")
+                                await message.channel.send(reply)
                         else:
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
@@ -504,10 +511,11 @@ async def on_message(message):
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
-                                reply = "::atk 復活てんきゅう"
-                                print("hukkatu")
-                                sleep(1)
-                                await message.channel.send(reply)
+                                async with message.channel.typing():
+                                    reply = "::atk 復活てんきゅう"
+                                    print("hukkatu")
+                                    sleep(1)
+                                    await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
                                 reply = "i;i <@266912885643411459> 復活"
                                 print("mention")
