@@ -36,6 +36,11 @@ lv2 = "10000000"
 lv3 = "10000000"
 lv4 = "10000000"
 
+autofire1 = "false"
+autofire2 = "false"
+autofire3 = "false"
+autofire4 = "false"
+
 two = "false"
 three = "false"
 four = "false"
@@ -67,6 +72,7 @@ async def on_message(message):
     global ch1
     global auto1
     global lv1
+    global autofire1
     wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
@@ -100,12 +106,16 @@ async def on_message(message):
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire1 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire1 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif message.embeds[0:]:
@@ -120,6 +130,8 @@ async def on_message(message):
                                 async with message.channel.typing():
                                     sleep(1)
                                     reply = "::atk 復活てんきゅう"
+                                    if autofire1 == "true":
+                                        reply = "::i f "
                                     print("hukkatu")
                                     await message.channel.send(reply)
                             if "はもうやられている！" in message.embeds[0].description:
@@ -140,13 +152,21 @@ async def on_message(message):
                                 async with message.channel.typing():
                                     sleep(wait)
                                     reply = "::atk "
+                                    if autofire1 == "true":
+                                        reply = "::i f "
                                     print("attack")
                                     await message.channel.send(reply)
     if message.author.id == 688305861059543046:
         if message.content.startswith('1;a'):
             reply = '::atk 再開'
+            if autofire1 == "true":
+                reply = "::i f "
             await message.channel.send(reply)
     if message.author.id == 266912885643411459:
+        if message.content.startswith('1;afireon'):
+            autofire1 = "true"
+        if message.content.startswith('1;afireoff'):
+            autofire1 = "false"
         if message.content.startswith('1;ls'):
             lv1 = message.content[5::]
             print("Lv." + lv1)
@@ -190,6 +210,7 @@ async def on_message(message):
     global ch2
     global auto2
     global lv2
+    global autofire2
     wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
@@ -215,6 +236,8 @@ async def on_message(message):
                             async with message.channel.typing():
                                 sleep(wait)
                                 reply = "::atk "
+                                if autofire2 == "true":
+                                    reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -223,12 +246,16 @@ async def on_message(message):
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire2 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire2 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif message.embeds[0:]:
@@ -242,6 +269,8 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     reply = "::atk 復活てんきゅう"
+                                    if autofire2 == "true":
+                                        reply = "::i f "
                                     print("hukkatu")
                                     sleep(1)
                                     await message.channel.send(reply)
@@ -263,9 +292,15 @@ async def on_message(message):
                                 async with message.channel.typing():
                                     sleep(wait)
                                     reply = "::atk "
+                                    if autofire2 == "true":
+                                        reply = "::i f "
                                     print("attack")
                                     await message.channel.send(reply)
     if message.author.id == 266912885643411459:
+        if message.content.startswith('2;afireon'):
+            autofire2 = "true"
+        if message.content.startswith('2;afireoff'):
+            autofire2 = "false"
         if message.content.startswith('2;ls'):
             lv2 = message.content[5::]
             print("Lv." + lv2)
@@ -342,6 +377,7 @@ async def on_message(message):
     global ch3
     global auto3
     global lv3
+    global autofire3
     wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
@@ -367,6 +403,8 @@ async def on_message(message):
                             async with message.channel.typing():
                                 sleep(wait)
                                 reply = "::atk "
+                                if autofire3 == "true":
+                                    reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -375,12 +413,16 @@ async def on_message(message):
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire3 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire3 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif message.embeds[0:]:
@@ -394,6 +436,8 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     reply = "::atk 復活てんきゅう"
+                                    if autofire3 == "true":
+                                        reply = "::i f "
                                     print("hukkatu")
                                     sleep(1)
                                     await message.channel.send(reply)
@@ -415,9 +459,15 @@ async def on_message(message):
                                 async with message.channel.typing():
                                     sleep(wait)
                                     reply = "::atk "
+                                    if autofire3 == "true":
+                                        reply = "::i f "
                                     print("attack")
                                     await message.channel.send(reply)
     if message.author.id == 266912885643411459:
+        if message.content.startswith('3;afireon'):
+            autofire3 = "true"
+        if message.content.startswith('3;afireoff'):
+            autofire3 = "false"
         if message.content.startswith('3;ls'):
             lv3 = message.content[5::]
             print("Lv." + lv3)
@@ -491,6 +541,7 @@ async def on_message(message):
     global ch4
     global auto4
     global lv4
+    global autofire4
     wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
@@ -516,6 +567,8 @@ async def on_message(message):
                             async with message.channel.typing():
                                 sleep(wait)
                                 reply = "::atk "
+                                if autofire4 == "true":
+                                    reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -524,12 +577,16 @@ async def on_message(message):
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire4 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
                             reply = "::atk "
+                            if autofire4 == "true":
+                                reply = "::i f "
                             print("attack")
                             await message.channel.send(reply)
                     elif message.embeds[0:]:
@@ -543,6 +600,8 @@ async def on_message(message):
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     reply = "::atk 復活てんきゅう"
+                                    if autofire4 == "true":
+                                        reply = "::i f "
                                     print("hukkatu")
                                     sleep(1)
                                     await message.channel.send(reply)
@@ -564,9 +623,15 @@ async def on_message(message):
                                 async with message.channel.typing():
                                     sleep(wait)
                                     reply = "::atk "
+                                    if autofire4 == "true":
+                                        reply = "::i f "
                                     print("attack")
                                     await message.channel.send(reply)
     if message.author.id == 266912885643411459:
+        if message.content.startswith('4;afireon'):
+            autofire4 = "true"
+        if message.content.startswith('4;afireoff'):
+            autofire4 = "false"
         if message.content.startswith('4;ls'):
             lv4 = message.content[5::]
             print("Lv." + lv4)
