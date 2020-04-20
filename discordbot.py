@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 from time import sleep
 import random
+import time
 
 import os
 import traceback
@@ -66,7 +67,7 @@ async def on_message(message):
     global ch1
     global auto1
     global lv1
-    wait = [0.5, 0.6, 0.7, 0.8, 0.9]
+    wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
@@ -89,7 +90,7 @@ async def on_message(message):
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
                             async with message.channel.typing():
-                                sleep(random.choice(wait))
+                                sleep(wait)
                                 reply = "::atk "
                                 print("attack")
                                 await message.channel.send(reply)
@@ -97,13 +98,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -132,7 +133,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(random.choice(wait))
+                                    sleep(wait)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -180,7 +181,7 @@ async def on_message(message):
     global ch2
     global auto2
     global lv2
-    wait = [0.5, 0.6, 0.7, 0.8, 0.9]
+    wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
@@ -203,7 +204,7 @@ async def on_message(message):
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
                             async with message.channel.typing():
-                                sleep(random.choice(wait))
+                                sleep(wait)
                                 reply = "::atk "
                                 print("attack")
                                 await message.channel.send(reply)
@@ -211,13 +212,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -246,7 +247,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(random.choice(wait))
+                                    sleep(wait)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -327,7 +328,7 @@ async def on_message(message):
     global ch3
     global auto3
     global lv3
-    wait = [0.5, 0.6, 0.7, 0.8, 0.9]
+    wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
@@ -350,7 +351,7 @@ async def on_message(message):
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
                             async with message.channel.typing():
-                                sleep(random.choice(wait))
+                                sleep(wait)
                                 reply = "::atk "
                                 print("attack")
                                 await message.channel.send(reply)
@@ -358,13 +359,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -393,7 +394,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(random.choice(wait))
+                                    sleep(wait)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
@@ -471,7 +472,7 @@ async def on_message(message):
     global ch4
     global auto4
     global lv4
-    wait = [0.5, 0.6, 0.7, 0.8, 0.9]
+    wait = random.uniform(0.5, 1)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
@@ -494,7 +495,7 @@ async def on_message(message):
                     if "]の攻撃！" in message.content:
                         if "の攻撃！[" in message.content:
                             async with message.channel.typing():
-                                sleep(random.choice(wait))
+                                sleep(wait)
                                 reply = "::atk "
                                 print("attack")
                                 await message.channel.send(reply)
@@ -502,13 +503,13 @@ async def on_message(message):
                             print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
-                            sleep(random.choice(wait))
+                            sleep(wait)
                             reply = "::atk "
                             print("attack")
                             await message.channel.send(reply)
@@ -537,7 +538,7 @@ async def on_message(message):
                                 await message.channel.send(reply)
                             elif "が待ち構えている...！" in message.embeds[0].title:
                                 async with message.channel.typing():
-                                    sleep(random.choice(wait))
+                                    sleep(wait)
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
