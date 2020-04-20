@@ -98,6 +98,8 @@ async def on_message(message):
                             async with message.channel.typing():
                                 sleep(wait)
                                 reply = "::atk "
+                                if autofire1 == "true":
+                                    reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -106,7 +108,7 @@ async def on_message(message):
                         if autofire1 == "true":
                             async with message.channel.typing():
                                 sleep(wait)
-                                reply = "::atk "
+                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -255,7 +257,7 @@ async def on_message(message):
                         if autofire2 == "true":
                             async with message.channel.typing():
                                 sleep(wait)
-                                reply = "::atk "
+                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -431,7 +433,7 @@ async def on_message(message):
                         if autofire3 == "true":
                             async with message.channel.typing():
                                 sleep(wait)
-                                reply = "::atk "
+                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -604,7 +606,7 @@ async def on_message(message):
                         if autofire1 == "true":
                             async with message.channel.typing():
                                 sleep(wait)
-                                reply = "::atk "
+                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
