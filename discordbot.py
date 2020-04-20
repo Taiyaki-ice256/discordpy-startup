@@ -111,6 +111,11 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "コマンドがまだ実行中だよ！" in message.embeds[0].description:
+                                async with message.channel.typing():
+                                    reply = "<@266912885643411459> 実行中.."
+                                    print("jikkou")
+                                    await message.channel.send(reply)
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     sleep(1)
@@ -225,6 +230,11 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "コマンドがまだ実行中だよ！" in message.embeds[0].description:
+                                async with message.channel.typing():
+                                    reply = "<@266912885643411459> 実行中.."
+                                    print("jikkou")
+                                    await message.channel.send(reply)
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     reply = "::atk 復活てんきゅう"
@@ -371,6 +381,11 @@ async def on_message(message):
                             await message.channel.send(reply)
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
+                            if "コマンドがまだ実行中だよ！" in message.embeds[0].description:
+                                async with message.channel.typing():
+                                    reply = "<@266912885643411459> 実行中.."
+                                    print("jikkou")
+                                    await message.channel.send(reply)
                             print(message.embeds[0].description)
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
@@ -516,6 +531,11 @@ async def on_message(message):
                     elif message.embeds[0:]:
                         if message.embeds[0].description:
                             print(message.embeds[0].description)
+                            if "コマンドがまだ実行中だよ！" in message.embeds[0].description:
+                                async with message.channel.typing():
+                                    reply = "<@266912885643411459> 実行中.."
+                                    print("jikkou")
+                                    await message.channel.send(reply)
                             if "は復活した！" in message.embeds[0].description:
                                 async with message.channel.typing():
                                     reply = "::atk 復活てんきゅう"
