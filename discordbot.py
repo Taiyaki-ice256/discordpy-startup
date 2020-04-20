@@ -142,6 +142,9 @@ async def on_message(message):
                                     reply = "::atk "
                                     print("attack")
                                     await message.channel.send(reply)
+    if message.author.id == 688305861059543046:
+        if message.content.startswith('1;a'):
+            reply = '::atk '
     if message.author.id == 266912885643411459:
         if message.content.startswith('1;ls'):
             lv1 = message.content[5::]
