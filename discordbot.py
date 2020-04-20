@@ -104,15 +104,6 @@ async def on_message(message):
                                 await message.channel.send(reply)
                         else:
                             print("petkill")
-                    elif "のダメージを与えた！" in message.content:
-                        if autofire1 == "true":
-                            async with message.channel.typing():
-                                sleep(wait)
-                                reply = "::i f "
-                                print("attack")
-                                await message.channel.send(reply)
-                        else:
-                            print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
@@ -249,15 +240,6 @@ async def on_message(message):
                                 reply = "::atk "
                                 if autofire2 == "true":
                                     reply = "::i f "
-                                print("attack")
-                                await message.channel.send(reply)
-                        else:
-                            print("petkill")
-                    elif "のダメージを与えた！" in message.content:
-                        if autofire2 == "true":
-                            async with message.channel.typing():
-                                sleep(wait)
-                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
@@ -429,15 +411,6 @@ async def on_message(message):
                                 await message.channel.send(reply)
                         else:
                             print("petkill")
-                    elif "のダメージを与えた！" in message.content:
-                        if autofire3 == "true":
-                            async with message.channel.typing():
-                                sleep(wait)
-                                reply = "::i f "
-                                print("attack")
-                                await message.channel.send(reply)
-                        else:
-                            print("petkill")
                     elif "ダメージを受けた。" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
@@ -598,15 +571,6 @@ async def on_message(message):
                                 reply = "::atk "
                                 if autofire4 == "true":
                                     reply = "::i f "
-                                print("attack")
-                                await message.channel.send(reply)
-                        else:
-                            print("petkill")
-                    elif "のダメージを与えた！" in message.content:
-                        if autofire1 == "true":
-                            async with message.channel.typing():
-                                sleep(wait)
-                                reply = "::i f "
                                 print("attack")
                                 await message.channel.send(reply)
                         else:
