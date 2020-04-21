@@ -12,8 +12,8 @@ loop = asyncio.get_event_loop()
 
 bot = commands.Bot(command_prefix='/')
 botitoken = os.environ['DISCORD_BOT_TOKEN_i']
-bot1token = os.environ['DISCORD_BOT_TOKEN1']
-bot2token = os.environ['DISCORD_BOT_TOKEN2']
+bot1token = os.environ['DISCORD_BOT_TOKEN2']
+bot2token = os.environ['DISCORD_BOT_TOKEN1']
 bot3token = os.environ['DISCORD_BOT_TOKEN3']
 bot4token = os.environ['DISCORD_BOT_TOKEN4']
 
@@ -73,7 +73,7 @@ async def on_message(message):
     global auto1
     global lv1
     global autofire1
-    wait = random.uniform(0.5, 1.5)
+    wait = random.uniform(1.5, 2.5)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
