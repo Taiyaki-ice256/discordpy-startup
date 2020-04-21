@@ -73,7 +73,7 @@ async def on_message(message):
     global auto1
     global lv1
     global autofire1
-    wait = random.uniform(1.5, 2.5)
+    wait = random.uniform(1.5, 3.5)
     if message.guild.id == 378472113394417674:
         if message.content.startswith('all;on'):
             if message.author.id == 266912885643411459:
