@@ -119,7 +119,7 @@ async def on_message(message):
                     elif "は華麗にかわした！" in message.content:
                         async with message.channel.typing():
                             sleep(wait)
-                            reply = "::atk "
+                            reply = "::atk かわしあたっく"
                             if autofire1 == "true":
                                 reply = "::i f "
                             print("attack")
