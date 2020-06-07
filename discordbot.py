@@ -1,7 +1,6 @@
 from discord.ext import commands
 from time import sleep
 
-from flask import Flask, jsonify, render_template, request
 import discord
 import asyncio
 import random
