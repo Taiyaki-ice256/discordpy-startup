@@ -506,10 +506,10 @@ async def on_message(message):
                                     reply = "no"
                                     print("no")
                                     await message.channel.send(reply)
-                        if bot.user.name + "は" in message.content:
+                        if bot.user.name in message.content:
                             if "]の攻撃！" in message.content:
                                 if "の攻撃！[" in message.content:
-                                    if bot.user.name + "はやられてしまった" in message.content:
+                                    if "はやられてしまった" in message.content:
                                         async with message.channel.typing():
                                             sleep(wait)
                                             reply = "::i e "
@@ -523,7 +523,7 @@ async def on_message(message):
                                             await message.channel.send(reply)
                                 else:
                                     print("petkill")
-                            elif bot.user.name + "はやられてしまった" in message.content:
+                            elif "はやられてしまった" in message.content:
                                 async with message.channel.typing():
                                     sleep(wait)
                                     reply = "::i e "
@@ -541,7 +541,7 @@ async def on_message(message):
                                     reply = "::atk ＾＾"
                                     print("attack")
                                     await message.channel.send(reply)
-                        if bot_2.user.name + "は" in message.content:
+                        if bot_2.user.name in message.content:
                             if "]の攻撃！" in message.content:
                                 if "の攻撃！[" in message.content:
                                     async with message.channel.typing():
