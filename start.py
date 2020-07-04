@@ -1,2 +1,2 @@
-nohup python discordbot.py &
-nohup python discordbot2.py &
+python discordbot.py
+python discordbot2.py
